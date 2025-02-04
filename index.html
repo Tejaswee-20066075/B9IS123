@@ -1,22 +1,17 @@
 <HTML:5>
-    <HEAD>
-        <SCRIPT>
-            alert("HI!")
-        </SCRIPT>
-    </HEAD>
-<BODY>
-    <p>Hi!There</p>
-
+  <head>
+    <Title>
+        sum of all 3 multiples of a, b and n
+    </Title>
     <script>
 
-    // Function to calculate the sum of multiples of a or b up to n
+  
     function calculateSum() {
-      // Get the values of a, b, and n from the input fields
+      
       const a = parseInt(document.getElementById("a").value);
       const b = parseInt(document.getElementById("b").value);
       const n = parseInt(document.getElementById("n").value);
       
-      // Check if the inputs are valid
       if (isNaN(a) || isNaN(b) || isNaN(n) || a <= 0 || b <= 0 || n <= 0) {
         alert("Please enter valid positive integers for a, b, and n.");
         return;
@@ -24,19 +19,17 @@
 
       let sum = 0;
 
-      // Loop through all numbers from 1 to n
       for (let i = 1; i <= n; i++) {
-        // If i is a multiple of a or b, add it to the sum
+        
         if (i % a === 0 || i % b === 0) {
           sum += i;
         }
       }
 
-      // Alert the user with the result
       alert("The sum of all multiples of " + a + " or " + b + " up to " + n + " is: " + sum);
     }
-  </script>
-</head>
+    </script>
+  </head>
 <body>
   <h1>Sum of Multiples of a or b</h1>
   
@@ -52,5 +45,5 @@
   <button onclick="calculateSum()">Calculate</button>
 
     <p>Welcome to my Html page</p>
-</BODY></HTML:5>
+</body></HTML:5>
 
