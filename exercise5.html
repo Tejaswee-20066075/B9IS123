@@ -1,1 +1,48 @@
-Hello world!
+<HTML:5>
+  <head>
+    <Title>
+      sum of all  multiples factor of the in a found in l.
+  </Title>
+  <script>
+    function f5() 
+    {
+      let sum =0;
+      for (let i=0; i<l.length;i++) 
+    {
+      for(let j=0; j<a.length; j++)
+      {
+        if(l[i]%a[j]===0)
+        {
+          sum+=l[i];
+          break;
+        }
+
+      }
+    }
+    return sum;
+    }
+    function f4()
+    {
+      const aInput = document.getElementById('a').value;
+      const lInput = document.getElementById('l').value;
+
+      const a= aInput.split(',').map(num=>paresInt(num.trim()));
+      const l= lInput.split(',').map(num=>paresInt(num.trim()));
+
+    if (a.length !==2)
+    {
+      alert("'a' must have 2 elements");
+      return;
+  
+    }
+    
+    if (a.some(isNaN) || l.some(isNaN))
+    {
+
+    }
+    }
+    
+  </script>
+  </head>
+
+</HTML:5>
