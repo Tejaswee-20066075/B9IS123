@@ -6,7 +6,7 @@
     <title>Exercise 1</title>
     <h3>Baggage weight check</h3>
     <script>
-        function doIt() {
+        function f1() {
           var weight = document.getElementById('bag weight').value;
           
           if (isNaN(weight) || weight === "") {
@@ -23,7 +23,7 @@
 </head>
 <body>
     <label for="bag weight">Enter your baggage weight (kg):</label>
-    <input type="text" id="bag weight" width="6">
-    <button onclick="doIt()">Submit</button>
+    <input type="text" id="bag weight" width="4">
+    <button onclick="f1()">Submit</button>
 </body>
 </html>
