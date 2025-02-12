@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <h3>Sum of multiples of 3 or 5 below 1000</h3>
+    <script>
+        function findSum() {
+          let sum = 0;
+          
+          for (let i = 0; i < 1000; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+              sum += i;
+            }
+          }
+          
+          alert("The sum of all multiples of 3 or 5 below 1000 is: " + sum);
+        }
+      </script>
+</head>
+<body>
+  <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6, and 9. The sum of these multiples is 23.</p>
+  <p>Find the sum of all the multiples of 3 or 5 below 1000:</p>
+  <button onclick="findSum()">Submit</button>
+</body>
+</html>
