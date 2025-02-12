@@ -6,17 +6,28 @@
     <title>Exercise 3</title>
     <h3>sum of all the multiples of a or b below n</h3>
     <script>
-        function f3(){
+        function f3(a, b, n){
             let sum =0;
         
         for (let i=0;i<n;i++){
             if(i%a === 0 || i%b === 0 ){
                 sum =+ i;
-
             }
             
         }
         alert("The sum of all multiples of 3 or 5 below 1000 is: " + sum);
+    }
+    function doIt() {
+      let a = parseInt(document.getElementById('a').value);
+      let b = parseInt(document.getElementById('b').value);
+      let n = parseInt(document.getElementById('n').value);
+      
+      if (isNaN(a) || isNaN(b) || isNaN(n)) {
+        alert("Please enter valid numbers for a, b, and n.");
+      } else {
+        let result = f3(a, b, n);
+        alert("The sum of all multiples of " + a + " or " + b + " below " + n + " is: " + result);
+      }
     }
         
     </script>
@@ -32,7 +43,7 @@
     <input type="number" id="n" name="n"><br>
 
 
-    <button onclick="f3()">calculate</button>
+    <button onclick="doIt()">click here!</button>
 
 </body>
 </html>
