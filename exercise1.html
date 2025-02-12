@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <h3>Baggage weight check</h3>
+    <script>
+        function doIt() {
+          var weight = document.getElementById('bag weight').value;
+          
+          if (isNaN(weight) || weight === "") {
+            alert("Please enter a valid number.");
+          } else {
+            if (parseFloat(weight) > 15) {
+              alert("Your baggage is overweight. Limit is 15kg.");
+            } else {
+              alert("Your baggage is within the weight limit.");
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <label for="bag weight">Enter your baggage weight (kg):</label>
+    <input type="text" id="bag weight" width="6">
+    <button onclick="doIt()">Submit</button>
+</body>
+</html>
