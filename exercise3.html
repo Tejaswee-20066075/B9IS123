@@ -11,10 +11,11 @@
         
         for (let i=0;i<n;i++){
             if(i%a === 0 || i%b === 0 ){
-                sum =+ i;
+                sum += i;
             }
             
         }
+        return sum;
       
     }
     function doIt() {
@@ -34,13 +35,13 @@
 </head>
 <body>
     <label for="a">Enter value for a:</label>
-    <input type="number" id="a" name="a"><br>
+    <input type="text" id="a" name="a"><br><br>
 
     <label for="b">Enter value for b:</label>
-    <input type="number" id="b" name="b"><br>
+    <input type="text" id="b" name="b"><br><br>
 
     <label for="n">Enter value for n:</label>
-    <input type="number" id="n" name="n"><br>
+    <input type="text" id="n" name="n"><br><br>
 
 
     <button onclick="doIt()">click here!</button>
