@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <h3>sum of all the multiples of factors in a found in in l (a and l should be arrays of integers)</h3>
+    <script>
+        function f6(a, l) {
+            let sum = 0;
+            for (let i = 0; i < l.length; i++) {
+                if (a.some(factor => l[i] % factor === 0)) {
+                    sum += l[i];
+                }
+            }
+            return sum;
+        }
+
+        function doIt6() {
+            let a = document.getElementById("a6").value.split(',').map(Number);
+            let l = document.getElementById("l6").value.split(',').map(Number);
+            let result = f6(a, l);
+            alert("The sum of multiples in the array for factors in a is: " + result);
+        }
+    </script>
+
+</head>
+<body>
+    <input type="text" id="a6" placeholder="a (comma separated)">
+    <input type="text" id="l6" placeholder="Array (comma separated)">
+    <button onclick="doIt6()">Press me!</button>
+</body>
+</html>
